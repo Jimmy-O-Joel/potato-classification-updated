@@ -18,9 +18,7 @@ body, html {
 }
 
 .upload {
-    /* The image used */
-    background-image: url("../public/assets/background2.png");
-  
+      
     /* Full height */
     height: 100vh; 
     
@@ -30,6 +28,11 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 104px;
+  }
+
+  #uploadbg{
+    /* The image used */
+    background-image: url("../public/assets/background2.png");
   }
 
   .leaf {
