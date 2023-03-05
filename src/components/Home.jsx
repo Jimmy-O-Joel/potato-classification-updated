@@ -210,7 +210,7 @@ const Home = ()=>{
                         >
                             Potato Disease Classification. Every Potato Farmer's Go To Website.
                         </Typography>
-                        <Box
+                        <Typography
                             sx={{
                                 width: "360px",
                                 fontFamily: "Niramit",
@@ -227,7 +227,7 @@ const Home = ()=>{
                         Are you a Potato farmer? Are you tired of seeing your labor go to waste due to potato diseases?
                         Don't worry. We got you covered. We help you classify your potatoes into healthy, early bligt,
                         Or late blight. Upload your potato leaf to our website and we'll do the magic.
-                        </Box>
+                        </Typography>
             
                         <Box width="300px" height="70px" display="flex"
                             sx={{
