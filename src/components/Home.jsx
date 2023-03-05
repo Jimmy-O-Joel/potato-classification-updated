@@ -116,15 +116,16 @@ const Home = ()=>{
                 )
             }
 
-            <Box className="plant" sx={{
-                width: "385px",
-                height: "373px",
-                margin: "8px auto 0px"
-            }}></Box>
+            
 
             {
                 isNonMobileScreens ? (
                     <>
+                        <Box className="plant" sx={{
+                            width: "385px",
+                            height: "373px",
+                            margin: "8px auto 0px"
+                        }}></Box>
 
                         <Typography
                             sx={{
@@ -191,6 +192,11 @@ const Home = ()=>{
                     </>
                 ) : (
                     <>
+                    <Box  sx={{
+                        width: "385px",
+                        height: "373px",
+                        margin: "8px auto 0px"
+                    }}><img key="./assets/plant.png" src="./assets/plant.png" alt="img"style={{ width: 385, height: 373 }}/></Box>
                     <Typography
                             sx={{
                                 padding: "0 10px",
@@ -227,7 +233,7 @@ const Home = ()=>{
                             sx={{
                                 margin: "10px auto",
                                 background: "rgba(251, 251, 251, 0.1)",
-                                borderRadius: "40px",
+                                borderRadius: "40px"
                             }}
                             
                         >
@@ -235,7 +241,7 @@ const Home = ()=>{
                             sx={{
                                 boxSizing: "border-box",
                                 border: "3px dashed #48BD23",
-                                borderRadius: "40px",
+                                borderRadius: "40px"
                             }}
                         >
                             <ButtonWrapper myBackgroundColor="#000000" myColor="#FFFFFF" myWidth="118px"
