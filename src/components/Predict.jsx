@@ -97,7 +97,7 @@ const Predict = ()=>{
                     </FlexBetween>
                     ) : (
 
-                        <Box width="400px" m="0 auto" background="red" p="20px 0 0">
+                        <Box width="256px" m="0 auto" p="20px 0 0">
                         
                             <Typography
                                 sx={{
