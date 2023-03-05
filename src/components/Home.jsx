@@ -19,7 +19,7 @@ const Home = ()=>{
     return(
         <Box className={isNonMobileScreens && "home"}  id="homebg"
         sx={{
-            paddingBottom: "75px"
+            paddingBottom: "25px"
         }}
         >
 
@@ -115,76 +115,150 @@ const Home = ()=>{
                         </Box>
                 )
             }
+
             <Box className="plant" sx={{
                 width: "385px",
                 height: "373px",
-                margin: "20px auto"
+                margin: "8px auto 0px"
             }}></Box>
-            <Typography
-                sx={{
-                    padding: "0 10px",
-                    fontFamily: "Niramit",
-                    fontWeight: "400",
-                    fontSize: "20px",
-                    lineHeight: "26px",
-                    color: "#FFFFFF",
-                    textAlign: "center"
-                }}
-            >
-                Potato Disease Classification. Every Potato Farmer's Go To Website.
-            </Typography>
-            <Box
-                sx={{
-                    width: "385px",
-                    fontFamily: "Niramit",
-                    fontWeight: "400",
-                    fontSize: "15px",
-                    lineHeight: "26px",
-                    color: "#FFFFFF",
-                    textAlign: "center",
-                    margin: "0 auto"
 
+            {
+                isNonMobileScreens ? (
+                    <>
 
-                }}
-            >
-            Are you a Potato farmer? Are you tired of seeing your labor go to waste due to potato diseases?
-            Don't worry. We got you covered. We help you classify your potatoes into healthy, early bligt,
-            Or late blight. Upload your potato leaf to our website and we'll do the magic.
-            </Box>
-
-            <Box width="421px" height="100px" display="flex"
-                sx={{
-                    margin: "10px auto",
-                    background: "rgba(251, 251, 251, 0.1)",
-                    borderRadius: "40px",
-                }}
-                
-            >
-            <FlexBetween width="363px" height="70px" m="auto" p="0 6px"
-                sx={{
-                    boxSizing: "border-box",
-                    border: "3px dashed #48BD23",
-                    borderRadius: "40px",
-                }}
-            >
-                <ButtonWrapper myBackgroundColor="#000000" myColor="#FFFFFF"
-                    sx={{
-                        "&:hover":{
-                            background: "#191825"
-                        }
-                    }}
-                >Add</ButtonWrapper>
-                <ButtonWrapper myBackgroundColor="#3AE004" myColor="#000000" onClick={handleClick}
-                sx={{
-                    "&:hover":{
-                        background: "#38E54D"
-                    }
-                }}
-                >Add</ButtonWrapper>
+                        <Typography
+                            sx={{
+                                fontFamily: "Niramit",
+                                fontWeight: "400",
+                                fontSize: "20px",
+                                lineHeight: "26px",
+                                color: "#FFFFFF",
+                                textAlign: "center"
+                            }}
+                        >
+                            Potato Disease Classification. Every Potato Farmer's Go To Website.
+                        </Typography>
+                        <Box
+                            sx={{
+                                width: "882px",
+                                fontFamily: "Niramit",
+                                fontWeight: "400",
+                                fontSize: "15px",
+                                lineHeight: "26px",
+                                color: "#FFFFFF",
+                                textAlign: "center",
+                                margin: "0 auto"
             
-            </FlexBetween>
             
-            </Box>
+                            }}
+                        >
+                        Are you a Potato farmer? Are you tired of seeing your labor go to waste due to potato diseases?
+                        Don't worry. We got you covered. We help you classify your potatoes into healthy, early bligt,
+                        Or late blight. Upload your potato leaf to our website and we'll do the magic.
+                        </Box>
+            
+                        <Box width="421px" height="100px" display="flex"
+                            sx={{
+                                margin: "10px auto",
+                                background: "rgba(251, 251, 251, 0.1)",
+                                borderRadius: "40px",
+                            }}
+                            
+                        >
+                        <FlexBetween width="363px" height="70px" m="auto" p="0 6px"
+                            sx={{
+                                boxSizing: "border-box",
+                                border: "3px dashed #48BD23",
+                                borderRadius: "40px",
+                            }}
+                        >
+                            <ButtonWrapper myBackgroundColor="#000000" myColor="#FFFFFF" myWidth="158px" myHeight="50px"
+                                sx={{
+                                    "&:hover":{
+                                        background: "#191825"
+                                    }
+                                }}
+                            >Add</ButtonWrapper>
+                            <ButtonWrapper myBackgroundColor="#3AE004" myColor="#000000" myWidth="158px" myHeight="50px" onClick={handleClick}
+                            sx={{
+                                "&:hover":{
+                                    background: "#38E54D"
+                                }
+                            }}
+                            >Add</ButtonWrapper>
+                        
+                        </FlexBetween> </Box>
+                    </>
+                ) : (
+                    <>
+                    <Typography
+                            sx={{
+                                padding: "0 10px",
+                                fontFamily: "Niramit",
+                                fontWeight: "400",
+                                fontSize: "20px",
+                                lineHeight: "26px",
+                                color: "#FFFFFF",
+                                textAlign: "center"
+                            }}
+                        >
+                            Potato Disease Classification. Every Potato Farmer's Go To Website.
+                        </Typography>
+                        <Box
+                            sx={{
+                                width: "360px",
+                                fontFamily: "Niramit",
+                                fontWeight: "400",
+                                fontSize: "15px",
+                                lineHeight: "26px",
+                                color: "#FFFFFF",
+                                textAlign: "center",
+                                margin: "0 auto"
+            
+            
+                            }}
+                        >
+                        Are you a Potato farmer? Are you tired of seeing your labor go to waste due to potato diseases?
+                        Don't worry. We got you covered. We help you classify your potatoes into healthy, early bligt,
+                        Or late blight. Upload your potato leaf to our website and we'll do the magic.
+                        </Box>
+            
+                        <Box width="300px" height="70px" display="flex"
+                            sx={{
+                                margin: "10px auto",
+                                background: "rgba(251, 251, 251, 0.1)",
+                                borderRadius: "40px",
+                            }}
+                            
+                        >
+                        <FlexBetween width="270px" height="50px" m="auto" p="0 6px"
+                            sx={{
+                                boxSizing: "border-box",
+                                border: "3px dashed #48BD23",
+                                borderRadius: "40px",
+                            }}
+                        >
+                            <ButtonWrapper myBackgroundColor="#000000" myColor="#FFFFFF" myWidth="118px"
+                                sx={{
+                                    "&:hover":{
+                                        background: "#191825"
+                                    }
+                                }}
+                            >Add</ButtonWrapper>
+                            <ButtonWrapper myBackgroundColor="#3AE004" myColor="#000000" myWidth="118px" onClick={handleClick}
+                            sx={{
+                                "&:hover":{
+                                    background: "#38E54D"
+                                }
+                            }}
+                            >Add</ButtonWrapper>
+                        
+                         </FlexBetween> 
+                        </Box> </>
+                )
+            }
+            
+            
         </Box>
     )
 
