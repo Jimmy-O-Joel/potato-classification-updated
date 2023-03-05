@@ -30,7 +30,7 @@ const Upload = ()=>{
 
                     return <Box className={isNonMobileScreens && "upload"} id="uploadbg"
                     sx={{
-                        paddingBottom: "75px"
+                        paddingBottom: "100px"
                     }}
                     >
 
