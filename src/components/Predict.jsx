@@ -273,7 +273,7 @@ const Predict = ()=>{
                             alignContent: "center",
                             alignItems: "center",
                             boxSizing: "border-box",
-                            width: "480px",
+                            width: "300px",
                             height: "300px",
                             background: "rgba(255, 255, 255, 0.2)",
                             border: "3px solid #3AE004",
@@ -282,11 +282,11 @@ const Predict = ()=>{
                     >
                         <Box className={!image && "leaf"}
                         sx={{
-                            width: "450px",
-                            height: "270px",
+                            width: "256px",
+                            height: "256px",
                         }}
                         >
-                            <img key={path} src={path} alt="img"style={{ width: 450, height: 270 }}/>
+                            <img key={path} src={path} alt="img"style={{ width: 256, height: 256 }}/>
                         </Box>
                     </Box>
                     )
