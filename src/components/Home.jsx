@@ -212,7 +212,7 @@ const Home = ()=>{
                         </Typography>
                         <Typography
                             sx={{
-                                width: "360px",
+                                width: "300px",
                                 fontFamily: "Niramit",
                                 fontWeight: "400",
                                 fontSize: "15px",
