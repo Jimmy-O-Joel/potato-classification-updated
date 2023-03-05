@@ -38,58 +38,99 @@ const Predict = ()=>{
                         paddingBottom: "75px"
                     }}
                 >
-                    <FlexBetween>
-    
-                    <Box>
-                    
-                        <Typography
+
+                {
+
+                    isNonMobileScreens ? (
+
+                        <FlexBetween>
+        
+                        <Box>
+                        
+                            <Typography
+                                sx={{
+                                    fontFamily: "pacifico",
+                                    fontStyle: "normal",
+                                    fontWeight: "400",
+                                    fontSize: "24px",
+                                    lineHeight: "42px",
+                                    textAlign: "center",
+                                    color: "#3EFF00"
+                                }}
+                                
+                            >
+                                Potato
+                            </Typography>
+                            <Typography
+                                sx={{
+                                    fontFamily: "Niramit",
+                                    fontStyle: "normal",
+                                    fontWeight: "400",
+                                    fontSize: "24px",
+                                    lineHeight: "31px",
+                                    textAlign: "center",
+                                    color: "#FFFFFF",
+                                    marginLeft: "43px"
+                                }}
+                                
+                            >
+                                classifier
+                            </Typography>
+                        </Box>
+                        <FlexBetween
                             sx={{
-                                fontFamily: "pacifico",
-                                fontStyle: "normal",
-                                fontWeight: "400",
-                                fontSize: "24px",
-                                lineHeight: "42px",
-                                textAlign: "center",
-                                color: "#3EFF00"
+                                paddingRight: "35px"
                             }}
-                            
                         >
-                            Potato
-                        </Typography>
-                        <Typography
-                            sx={{
-                                fontFamily: "Niramit",
-                                fontStyle: "normal",
-                                fontWeight: "400",
-                                fontSize: "24px",
-                                lineHeight: "31px",
-                                textAlign: "center",
-                                color: "#FFFFFF",
-                                marginLeft: "43px"
-                            }}
-                            
-                        >
-                            classifier
-                        </Typography>
-                    </Box>
-                    <FlexBetween
-                        sx={{
-                            paddingRight: "35px"
-                        }}
-                    >
-                    
-                        <Header>
-                            Home
-                        </Header>
-                        <Header>
-                            About
-                        </Header>
-                        <Header>
-                            FAQ
-                        </Header>
+                        
+                            <Header>
+                                Home
+                            </Header>
+                            <Header>
+                                About
+                            </Header>
+                            <Header>
+                                FAQ
+                            </Header>
+                        </FlexBetween>
+        
                     </FlexBetween>
-    
-                </FlexBetween>
+                    ) : (
+
+                        <Box width="400px" m="0 auto" background="red" p="20px 0 0">
+                        
+                            <Typography
+                                sx={{
+                                    fontFamily: "pacifico",
+                                    fontStyle: "normal",
+                                    fontWeight: "400",
+                                    fontSize: "24px",
+                                    lineHeight: "42px",
+                                    textAlign: "center",
+                                    color: "#3EFF00"
+                                }}
+                                
+                            >
+                                Potato
+                            </Typography>
+                            <Typography
+                                sx={{
+                                    fontFamily: "Niramit",
+                                    fontStyle: "normal",
+                                    fontWeight: "400",
+                                    fontSize: "24px",
+                                    lineHeight: "31px",
+                                    textAlign: "center",
+                                    color: "#FFFFFF",
+                                    marginLeft: "43px"
+                                }}
+                                
+                            >
+                                classifier
+                            </Typography>
+                        </Box>
+                    )
+                }
 
                 {
                     isNonMobileScreens ?
@@ -169,32 +210,24 @@ const Predict = ()=>{
                         >Early blight</ClassName>
                     </>
                     ):
-                    (<Box m="50px auto 0" width="500px"
+                    (<Box m="50px auto 0" width="100px"
                         sx={{
-                            position: "relative"
+                            position: "relative",
+                            background: "red"
 
                         }}
-                    >
-                        <ClassName 
-                            sx={{
-                                left: "10px",
-                            }}
+                    >   
+                        {isHealthy && <ClassName 
                             activeBackground={isHealthy && "#3AE004"}
-                        >Healthy</ClassName>
+                        >Healthy</ClassName>}
             
-                        <ClassName 
-                            sx={{
-                                left: "158px",
-                            }}
+                        {isLateBlight && <ClassName 
                             activeBackground={isLateBlight && "#3AE004"}
-                        >Late blight</ClassName>
+                        >Late blight</ClassName>}
             
-                        <ClassName 
-                            sx={{
-                                left: "306px",
-                            }}
+                        {isEarlyBlight && <ClassName 
                             activeBackground={isEarlyBlight && "#3AE004"}
-                        >Early blight</ClassName>
+                        >Early blight</ClassName>}
                     
                     </Box>)
                 }
@@ -240,8 +273,8 @@ const Predict = ()=>{
                             alignContent: "center",
                             alignItems: "center",
                             boxSizing: "border-box",
-                            width: "559px",
-                            height: "384px",
+                            width: "480px",
+                            height: "300px",
                             background: "rgba(255, 255, 255, 0.2)",
                             border: "3px solid #3AE004",
                             borderRadius: "20px"
@@ -249,11 +282,11 @@ const Predict = ()=>{
                     >
                         <Box className={!image && "leaf"}
                         sx={{
-                            width: "512px",
-                            height: "342px",
+                            width: "450px",
+                            height: "270px",
                         }}
                         >
-                            <img key={path} src={path} alt="img"style={{ width: 512, height: 342 }}/>
+                            <img key={path} src={path} alt="img"style={{ width: 450, height: 270 }}/>
                         </Box>
                     </Box>
                     )
