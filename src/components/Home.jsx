@@ -193,10 +193,10 @@ const Home = ()=>{
                 ) : (
                     <>
                     <Box  sx={{
-                        width: "385px",
+                        width: "300px",
                         height: "373px",
                         margin: "8px auto 0px"
-                    }}><img key="./assets/plant.png" src="./assets/plant.png" alt="img"style={{ width: 385, height: 373 }}/></Box>
+                    }}><img key="./assets/plant.png" src="./assets/plant.png" alt="img"style={{ width: 300, height: 373 }}/></Box>
                     <Typography
                             sx={{
                                 padding: "0 10px",
