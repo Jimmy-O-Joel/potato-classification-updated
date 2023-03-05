@@ -4,8 +4,11 @@ import FlexBetween from "./FlexBetween";
 import { Typography } from "@mui/material";
 import ButtonWrapper from "./ButtonWrapper";
 import { useNavigate } from "react-router-dom";
+import {useMediaQuery} from "@mui/material";
 
 const Home = ()=>{
+    
+    const isNonMobileScreens = useMediaQuery("(min-width: 1000px)");
 
     const navigate = useNavigate()
 
@@ -14,66 +17,112 @@ const Home = ()=>{
     }
 
     return(
-        <div className="home">
-            <FlexBetween>
+        <Box className={isNonMobileScreens && "home"}  id="homebg"
+        sx={{
+            paddingBottom: "75px"
+        }}
+        >
 
-                <Box>
-                
-                    <Typography
-                        sx={{
-                            fontFamily: "pacifico",
-                            fontStyle: "normal",
-                            fontWeight: "400",
-                            fontSize: "24px",
-                            lineHeight: "42px",
-                            textAlign: "center",
-                            color: "#3EFF00"
-                        }}
+            {
+                isNonMobileScreens ? (
+                    <>
+                    
+                    <FlexBetween>
+        
+                        <Box>
                         
-                    >
-                        Potato
-                    </Typography>
-                    <Typography
-                        sx={{
-                            fontFamily: "Niramit",
-                            fontStyle: "normal",
-                            fontWeight: "400",
-                            fontSize: "24px",
-                            lineHeight: "31px",
-                            textAlign: "center",
-                            color: "#FFFFFF",
-                            marginLeft: "43px"
-                        }}
+                            <Typography
+                                sx={{
+                                    fontFamily: "pacifico",
+                                    fontStyle: "normal",
+                                    fontWeight: "400",
+                                    fontSize: "24px",
+                                    lineHeight: "42px",
+                                    textAlign: "center",
+                                    color: "#3EFF00"
+                                }}
+                                
+                            >
+                                Potato
+                            </Typography>
+                            <Typography
+                                sx={{
+                                    fontFamily: "Niramit",
+                                    fontStyle: "normal",
+                                    fontWeight: "400",
+                                    fontSize: "24px",
+                                    lineHeight: "31px",
+                                    textAlign: "center",
+                                    color: "#FFFFFF",
+                                    marginLeft: "43px"
+                                }}
+                                
+                            >
+                                classifier
+                            </Typography>
+                        </Box>
+                        <FlexBetween
+                                sx={{
+                                    paddingRight: "35px"
+                                }}
+                        >
                         
-                    >
-                        classifier
-                    </Typography>
-                </Box>
-                <FlexBetween
-                        sx={{
-                            paddingRight: "35px"
-                        }}
-                >
-                
-                    <ActivePage>
-                        Home
-                    </ActivePage>
-                    <ActivePage>
-                        About
-                    </ActivePage>
-                    <ActivePage>
-                        FAQ
-                    </ActivePage>
-                </FlexBetween>
-
-            </FlexBetween>
+                            <ActivePage>
+                                Home
+                            </ActivePage>
+                            <ActivePage>
+                                About
+                            </ActivePage>
+                            <ActivePage>
+                                FAQ
+                            </ActivePage>
+                        </FlexBetween>
+        
+                    </FlexBetween>
+                    </>
+                ) : (
+                    <Box width="256px" m="0 auto" p="20px 0 0" >
+                        
+                            <Typography
+                                sx={{
+                                    fontFamily: "pacifico",
+                                    fontStyle: "normal",
+                                    fontWeight: "400",
+                                    fontSize: "24px",
+                                    lineHeight: "42px",
+                                    textAlign: "center",
+                                    color: "#3EFF00"
+                                }}
+                                
+                            >
+                                Potato
+                            </Typography>
+                            <Typography
+                                sx={{
+                                    fontFamily: "Niramit",
+                                    fontStyle: "normal",
+                                    fontWeight: "400",
+                                    fontSize: "24px",
+                                    lineHeight: "31px",
+                                    textAlign: "center",
+                                    color: "#FFFFFF",
+                                    marginLeft: "43px"
+                                }}
+                                
+                            >
+                                classifier
+                            </Typography>
+                        </Box>
+                )
+            }
             <Box className="plant" sx={{
                 width: "385px",
                 height: "373px",
-                margin: "8px auto 0px"
+                margin: "20px auto"
             }}></Box>
             <Typography
                 sx={{
+                    padding: "0 10px",
                     fontFamily: "Niramit",
                     fontWeight: "400",
                     fontSize: "20px",
@@ -86,7 +135,7 @@ const Home = ()=>{
             </Typography>
             <Box
                 sx={{
-                    width: "882px",
+                    width: "385px",
                     fontFamily: "Niramit",
                     fontWeight: "400",
                     fontSize: "15px",
@@ -136,7 +185,7 @@ const Home = ()=>{
             </FlexBetween>
             
             </Box>
-        </div>
+        </Box>
     )
 
 }
