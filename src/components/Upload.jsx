@@ -86,7 +86,7 @@ const Upload = ()=>{
                             <Box m="0 auto" width="866px" height="512px"
                             sx={{
                                 boxSizing: "border-box",
-                                background: "rgba(255, 255, 255, 0.2)",
+                                background: "rgba(0, 0, 0, 0.59)",
                                 border: "3px solid #FFFFFF",
                                 borderRadius: "20px",
                                 display: "flex",
@@ -122,7 +122,10 @@ const Upload = ()=>{
                                 <AddPhotoAlternateOutlinedIcon sx={{
                                     width: "186px",
                                     height: "160px",
-                                    color: "#383636"
+                                    color: "#383636",
+                                    "&:hover": {
+                                        cursor: "pointer"
+                                    }
                                 }}/>
                             
                             </Box>

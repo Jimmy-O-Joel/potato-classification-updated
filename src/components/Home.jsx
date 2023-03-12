@@ -121,11 +121,13 @@ const Home = ()=>{
             {
                 isNonMobileScreens ? (
                     <>
-                        <Box className="plant" sx={{
-                            width: "385px",
+                        <Box sx={{
+                            width: "468px",
                             height: "373px",
                             margin: "8px auto 0px"
-                        }}></Box>
+                        }}>
+                            <img key="img" src="./assets/potato.png" alt="img"style={{ width: 468, height: 373 }}/>
+                        </Box>
 
                         <Typography
                             sx={{
@@ -158,7 +160,7 @@ const Home = ()=>{
                         Or late blight. Upload your potato leaf to our website and we'll do the magic.
                         </Box>
             
-                        <Box width="421px" height="100px" display="flex"
+                        <Box width="421px" height="115px" display="flex"
                             sx={{
                                 margin: "10px auto",
                                 background: "rgba(251, 251, 251, 0.1)",
@@ -166,21 +168,14 @@ const Home = ()=>{
                             }}
                             
                         >
-                        <FlexBetween width="363px" height="70px" m="auto" p="0 6px"
+                        <FlexBetween width="363px" height="87px" m="auto" p="0 6px"
                             sx={{
                                 boxSizing: "border-box",
                                 border: "3px dashed #48BD23",
                                 borderRadius: "40px",
                             }}
                         >
-                            <ButtonWrapper myBackgroundColor="#000000" myColor="#FFFFFF" myWidth="158px" myHeight="50px"
-                                sx={{
-                                    "&:hover":{
-                                        background: "#191825"
-                                    }
-                                }}
-                            >Add</ButtonWrapper>
-                            <ButtonWrapper myBackgroundColor="#3AE004" myColor="#000000" myWidth="158px" myHeight="50px" onClick={handleClick}
+                            <ButtonWrapper myBackgroundColor="#3AE004" myColor="#000000" myWidth="339px" myHeight="61px" onClick={handleClick}
                             sx={{
                                 "&:hover":{
                                     background: "#38E54D"
@@ -196,7 +191,7 @@ const Home = ()=>{
                         width: "300px",
                         height: "373px",
                         margin: "8px auto 0px"
-                    }}><img key="./assets/plant.png" src="./assets/plant.png" alt="img"style={{ width: 300, height: 373 }}/></Box>
+                    }}><img key="img" src="./assets/potato.png" alt="img"style={{ width: 300, height: 373 }}/></Box>
                     <Typography
                             sx={{
                                 padding: "0 10px",

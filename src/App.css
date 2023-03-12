@@ -4,10 +4,6 @@ body, html {
     margin: 0;
 }
 
-.plant{
-    background-image: url("../public/assets/plant.png");
-}
-
 .home {
     background-size: cover;
     height: 100vh;
