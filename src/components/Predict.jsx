@@ -30,12 +30,11 @@ const Predict = ()=>{
                     clearData()
                 }
 
-
                 return<Box
                     className={isNonMobileScreens && "predict"}
                     sx={{
                         background: "#000000",
-                        paddingBottom: "75px"
+                        paddingBottom: "135px"
                     }}
                 >
 
@@ -142,8 +141,8 @@ const Predict = ()=>{
                                 position:  "absolute",
                                 width: "263px",
                                 height: "61px",
-                                left: "966px",
-                                top: "125px",
+                                left: "210px",
+                                top: "709px",
                                 border: "3px solid #205A0D",
                                 borderRadius: "20px",
                                 color: "#FBFBFB",
@@ -300,7 +299,7 @@ const Predict = ()=>{
                         <Typography
                             sx={{
                                 position: "absolute",
-                                left: "712px",
+                                left: "827px",
                                 top: "233px",
                                 fontFamily: "Niramit",
                                 fontStyle: "normal",
@@ -339,7 +338,7 @@ const Predict = ()=>{
                             position: "absolute",
                             width: "280px",
                             height: "280px",
-                            left: "655px",
+                            left: "750px",
                             top: "300px",
                             background: "conic-gradient(from 198.9deg at 54.49% 32%, #3AE004 0deg, #EDFCE9 6.6deg, #FFFFFF 39.6deg, #BDF5AB 40.62deg, #3AE004 360deg)",
                             transform: "rotate(165.99deg)",
@@ -353,7 +352,7 @@ const Predict = ()=>{
                     <Typography
                         sx={{
                             position: "absolute",
-                            left: "772px",
+                            left: "874px",
                             top: "416px",
                             fontFamily: 'Playfair Display',
                             fontStyle: "normal",
@@ -403,7 +402,7 @@ const Predict = ()=>{
                             position: "absolute",
                             width: "247px",
                             height: "72px",
-                            left: "694px",
+                            left: "789px",
                             top: "620px",
                             border: "2px solid #3AE004",
                             borderRadius: "40px"
@@ -415,7 +414,7 @@ const Predict = ()=>{
                             position: "absolute",
                             width: "40px",
                             height: "40px",
-                            left: "707px",
+                            left: "802px",
                             top: "634px",
                             background: "rgba(84, 180, 53, 0.6)",
                             borderRadius: "50%",
@@ -435,7 +434,7 @@ const Predict = ()=>{
                     <Typography
                             sx={{
                                 position: "absolute",
-                                left: "748px",
+                                left: "843px",
                                 top: "635px",
                                 fontFamily: "Niramit",
                                 fontStyle: "normal",
